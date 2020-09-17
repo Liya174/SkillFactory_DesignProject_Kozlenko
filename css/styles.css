@@ -1,0 +1,183 @@
+@font-face {
+    src: url('../fonts/NunitoSans-Regular.ttf');
+    font-family: 'NunitoSans Regular';
+}
+
+@font-face {
+    src: url('../fonts/NunitoSans-Italic.ttf');
+    font-family: 'NunitoSans Italic';
+}
+
+@font-face {
+    src: url('../fonts/YesevaOne-Regular.ttf');
+    font-family: 'YesevaOne Regular';
+}
+/*general styles*/
+body {
+    margin: 0;
+    font-family: 'NunitoSans Regular', Helvetica, Arial, sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
+.button {
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    border: 0;
+    outline: 0;
+    
+    font-family: 'NunitoSans Italic', Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.title {
+    margin: 0;
+    font-family: 'YesevaOne Regular', 'Times New Roman', Times, serif;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+/*
+.subtitle {
+    font-family: 'YesevaOne Regular', 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+}
+
+.input {
+    font-family: 'NunitoSans Regular', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 31px;
+    color: #363636;
+    border: 0;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);;
+    width: 231px;
+}
+
+Если делать текст в input placeholder, то он будет светлее заданного;
+если делать как value, то есть возможность его удалить... Надо бы уточнить. Потом
+.input::placeholder {
+    font-family: 'NunitoSans Regular', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: #363636;
+}*/
+
+/*start of the header */
+.header {
+    background-color: #131313;
+}
+
+.header-box {
+    display: flex;
+    height: 83px;
+    justify-content: space-between;
+    align-items: center;
+
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.header-navigation {
+    list-style: none;
+    display: flex;
+}
+
+.header-navigation__item {
+    margin-right: 47px;
+}
+
+.nondesign-a {
+    text-decoration: none;
+    color: white;
+}
+
+.nondesign-a:hover {
+    color: #E3B873;
+}
+
+.button-header {
+    padding: 13px 33px;
+}
+
+.text-orange {
+    color: #E3B873;
+}
+/*end of the header, start of the hero*/
+.hero {
+    background-image: url("../img/bgRoom.jpg");
+    background-size: cover;
+    height: 707px;
+    position: relative;
+    padding-top: 194px;
+}
+/*add overlay*/
+.hero-overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 0;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 1;
+    padding-left: 43px;
+}
+
+.hero-title {
+    width: 676px;
+    font-size: 40px;
+    line-height: 53px;
+    letter-spacing: 0;
+    color: #FFFFFF;
+}
+
+.hero-text {
+    width: 504px;
+    font-size: 22px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.hero-button__first {
+    width: 207px;
+    height: 51px;
+    margin-right: 20px;
+}
+
+.hero-button__second {
+    width: 207px;
+    height: 51px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #FFFFFF;
+    box-shadow: none;
+}
+/*end of the hero */
