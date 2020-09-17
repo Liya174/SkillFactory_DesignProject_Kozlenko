@@ -120,7 +120,8 @@ body * {
 }
 
 .button-header {
-    padding: 13px 33px;
+   width: 161px;
+   height: 37px;
 }
 
 .text-orange {
