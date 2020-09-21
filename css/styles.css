@@ -16,6 +16,7 @@
 body {
     margin: 0;
     font-family: 'NunitoSans Regular', Helvetica, Arial, sans-serif;
+    font-size: 14px;
 }
 
 body * {
@@ -36,53 +37,69 @@ body * {
     
     font-family: 'NunitoSans Italic', Helvetica, Arial, sans-serif;
     font-size: 11px;
-    line-height: 15px;
+    line-height: 1.36;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+.button-nondesign {
+    background: none;
+    border: none;
+    box-shadow: none;
 }
 
 .title {
     margin: 0;
     font-family: 'YesevaOne Regular', 'Times New Roman', Times, serif;
     font-size: 27px;
-    line-height: 37px;
-    letter-spacing: -0.07em;
+    line-height: 1.4;
     text-transform: uppercase;
     color: #E3B873;
 }
-/*
+
 .subtitle {
-    font-family: 'YesevaOne Regular', 'Times New Roman', Times, serif;
     font-size: 20px;
-    line-height: 28px;
     text-align: center;
-    text-transform: uppercase;
     color: #181818;
+}
+
+/*for drawing lines around the logo-picture*/
+.logo {
+    position: relative;
+    color: #E3B873;
+    margin-top: 12px;
+}
+
+.logo::after {
+    content: '';
+    width: 32px;
+    border-bottom: solid 1px #E3B873;
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    z-index: 1;
+}
+
+.logo::before {
+    content: '';
+    width: 32px;
+    border-bottom: solid 1px #E3B873;
+    position: absolute;
+    left: -42px;
+    top: 50%;
+    z-index: 1;
 }
 
 .input {
     font-family: 'NunitoSans Regular', Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
-    line-height: 31px;
+    line-height: 2.2;
     color: #363636;
     border: 0;
-    border-bottom: 1px solid rgba(54, 54, 54, 0.3);;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
     width: 231px;
 }
-
-Если делать текст в input placeholder, то он будет светлее заданного;
-если делать как value, то есть возможность его удалить... Надо бы уточнить. Потом
-.input::placeholder {
-    font-family: 'NunitoSans Regular', Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 23px;
-    color: #363636;
-}*/
 
 /*start of the header */
 .header {
@@ -94,11 +111,9 @@ body * {
     height: 83px;
     justify-content: space-between;
     align-items: center;
-
     text-transform: uppercase;
     font-size: 11px;
     line-height: 15px;
-    color: #FFFFFF;
 }
 
 .header-navigation {
@@ -119,7 +134,7 @@ body * {
     color: #E3B873;
 }
 
-.button-header {
+.header-button {
    width: 161px;
    height: 37px;
 }
@@ -135,8 +150,8 @@ body * {
     position: relative;
     padding-top: 194px;
 }
-/*add overlay*/
-.hero-overlay {
+
+.hero::after {
     content: '';
     position: absolute;
     top: 0;
@@ -149,15 +164,13 @@ body * {
 
 .hero-container {
     position: relative;
-    z-index: 1;
+    z-index: 100;
     padding-left: 43px;
 }
 
 .hero-title {
     width: 676px;
     font-size: 40px;
-    line-height: 53px;
-    letter-spacing: 0;
     color: #FFFFFF;
 }
 
@@ -181,4 +194,265 @@ body * {
     border: 1px solid #FFFFFF;
     box-shadow: none;
 }
-/*end of the hero */
+/*end of the hero, start of the projects*/
+
+.project {
+    background-color: #131313;
+    height: 1074px;
+}
+
+.project-list {
+    margin: 0 0 0 535px;
+    padding: 107px 0 0;
+    display: flex;
+}
+
+.p-l__list {
+    list-style: none;
+    padding: 6px 0;
+    margin: 0 60.5px 45px 0;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.p-l__list:last-of-type {
+    margin-right: 0;
+}
+
+.p-l__list-selected {
+    border-bottom: 1px solid #E3B873;
+    color: #E3B873;
+}
+
+.project-box {
+    display: flex;
+    padding-left: 43px;
+}
+
+.project-part {
+    flex-shrink: 0;
+    height: 390px;
+    width: 442px;
+    margin-right: 50px;
+ } 
+
+.p-part__title {
+    letter-spacing: -0.07em;
+}
+
+.project-text {
+    padding-top: 20px;
+    line-height: 1.9;
+    color: #FFFFFF;
+}
+
+.project-properties {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 200px;
+}
+
+.p-p__title {
+    padding-top: 20px;
+    width: 50%;
+    font-size: 18px;
+}
+
+.p-p__text {
+    width: 50%;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.project-dots {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.p-d__dot {
+    padding: 4.5px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin: 4.5px 9px;
+}
+
+.p-d__dot-selected {
+    background-color: #E3B873;
+}
+
+/*end of the project, start of the control */
+.control {
+    max-width: 817px;
+    margin: -329px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.control_subtitle {
+    color: #FFFFFF;
+}
+
+.control-image {
+    width: 817px;
+    height: 434px;
+    background: url("../img/video stop.png");
+    position: relative;
+    margin: 31px 0 80px 0;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+ 
+}
+
+.control-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.control-play {
+    z-index: 100;
+}
+
+.control-text {
+    position: relative;
+    max-width: 681px;
+    font-size: 18px;
+    line-height: 2;
+    text-align: center;
+}
+
+.control-text::after {
+    content: '';
+    width: 55px;
+    border-bottom: solid 1px #E3B873;
+    position: absolute;
+    left: calc(50% - 25px);
+    top: -34px;
+    z-index: 1;
+}
+
+.control-form {
+    max-width: 823px;
+    margin-top: 91.5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.control-label {
+    height: 51px;
+    margin-right: 49px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: rgba(54, 54, 54, 0.5);
+}
+
+.control-button {
+    width: 200px;
+    height: 51px;
+    font-family: 'NunitoSans Regular', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+
+.control-agreement {
+    margin-top: 33px; 
+    text-align: center;
+}
+
+.control-label-2 {
+    cursor: pointer;
+}
+
+.control-checkbox{
+    display: none;
+}
+
+.control-fake {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+}
+
+.control-fake::before{
+    content: "\2714";
+    opacity: 0;
+    transition: .2s;
+}
+
+.control-checkbox:checked + .control-fake::before{
+    opacity: 1;
+}
+
+/*end of the control, starp of the repair */
+.repair {
+    margin-top: 147px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.repair-boxes {
+    margin: 31px 0 311px;
+    width: 1256px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.r-b-box {
+    width: 392px;
+    height: 421px;
+}
+
+.r-b-box_bg1 {
+    background-image: url("../img/redecorating.jpg");
+}
+
+.r-b-box_bg2 {
+    background-image: url("../img/overhaul.jpg");
+}
+
+.r-b-box_bg3 {
+    background-image: url("../img/designer\ repair.jpg");
+}
+
+.r-b-box_item {
+    margin: 294px 31px 0;
+    background: #fff;
+}
+
+.repair_subtitle {
+    font-size: 18px;
+    padding: 25px 0 0 34px;
+    text-transform: none;
+    color: #363636;
+}
+
+.r-b-box_list {
+    padding-left: 47px;
+    font-size: 13px;
+    line-height: 2.1;
+    color: #959595;
+}
+
+.repair-button {
+    width: 228px;
+    height: 54px;
+    font-family: 'YesevaOne Regular', 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
