@@ -20,16 +20,16 @@
                     <li class="header-navigation__item"><a class="nondesign-a" href="">Contacts</a></li>
                 </ul>
             </nav>
-            <a class="text-orange" href="tel:+79287683239" class="link">+7 (928) 768-32-39</a>
+            <a class="text-orange" href="tel:+79287683239">+7 (928) 768-32-39</a>
             <button class="button header-button">Request a call</button>
         </div>
     </header>
 
-    <main>
+    <main> 
         <section class="hero">
             <div class="container hero-container">
                 <h1 class="title hero-title">Turnkey Repair in the<br>city of <span class="text-orange">Rostov-on-Don</span></h1>
-                <p class="hero-text">Get ready-made turnkey repairs on time<br>with work time saving up to 45 days and 20% from cost of materials due to the organization of work</p>
+                <p class="hero-text">Get ready-made turnkey repairs on time<br>with work time saving up to 45 days and 20% from<br>cost of materials due to the organization of work</p>
                 <button class="button hero-button__first">CALCULATE THE COST</button>
                 <button class="button hero-button__second">SUBMIT YOUR APPLICATION</button>
                 </div>
@@ -37,66 +37,66 @@
         </section>
         <section class="project" id="project">
             <div class="container"> 
-
                 <ul class="project-list">
                     <li class="title p-l__list p-l__list-selected">Rostov-on-Don, Admiral</li>
                     <li class="title p-l__list">Sochi Thieves</li>
                     <li class="title p-l__list">Rostov-on-Don Patriotic</li>
                     </ul>
-
                 <div class="project-box">
-                    <div class="project-part">
-                        <h2 class="title p-part__title">Completed<br>projects</h2>
-                        <p class="project-text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction 
+                    <h2 class="title p-part__title">Completed<br>projects</h2>
+                    <p class="project-text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction 
                             market we have made happy more than 1000 families</p>
-                            <div class="project-properties">
-                                <h3 class="title p-p__title">City:</h3>
-                                <h3 class="title p-p__title">Repair time:</h3>
-                                <p class="p-p__text">Rostov-on-Don<br>LCD admiral</p>
-                                <p class="p-p__text">3.5 months</p>
-                                <h3 class="title p-p__title">Apartment area:</h3>
-                                <h3 class="title p-p__title">Repair Cost:</h3>
-                                <p class="p-p__text">81 m2</p>
-                                <p class="p-p__text">Upon request</p>
-                            </div>
-                            <div class="project-dots">
+                    <figure class="project-box__image_mobile">
+                        <img src="./img/middle tv.png" alt="tv picture" width="100%">
+                    </figure>     
+                    <div class="project-properties">
+                        <h3 class="title p-p__title">City:</h3>
+                        <h3 class="title p-p__title">Apartment area:</h3>
+                        <p class="p-p__text">Rostov-on-Don<br>LCD admiral</p>
+                        <p class="p-p__text">81 m2</p>
+                        <h3 class="title p-p__title">Repair time:</h3>
+                        <h3 class="title p-p__title">Repair Cost:</h3>
+                        <p class="p-p__text">3.5 months</p>
+                        <p class="p-p__text">Upon request</p>
+                    </div>
+                    <div class="project-dots">
                                 <button class="button-nondesign"><img src="./img/arrow.svg"></button>
                                 <div class="p-d__dot p-d__dot-selected"></div>
                                 <div class="p-d__dot"></div>
                                 <div class="p-d__dot"></div>
                                 <button class="button-nondesign"><img src="./img/arrow.svg" style="transform: scale(-1, 1);"></button>
-                            </div>
                     </div>
-                    <div>
+                    <figure class="project-box__image">
                         <img src="./img/middle chairs.png" alt="chairs picture">
-                    </div>
+                    </figure>
                 </div>
             </div>
         </section>  
 
         <section class="control">
-            <h3 class="title subtitle control_subtitle">online control</h2>
+            <h3 class="title subtitle control_subtitle">online control</h3>
             <div class="logo">
                 <img src="./img/camera.svg">
             </div>
             <div class="control-image">
-               <img class="control-play" src="./img/play2.svg" alt="video">
+                <img class="control-play" src="./img/play2.svg" alt="video">
             </div>
             <p class="control-text">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!<br>Leave a request below and you will receive a link to the broadcast.</p>
             <form class="control-form">
                 <label class="control-label">Name<br><input class="input" type="text" value="What is your name:"></label>
                 <label class="control-label">Phone<br><input class="input" type="tel" value="Your phone number:"></label>
-                <button class="button control-button">Submit</button>
+                <input class="button control__submit" type="submit" name="submit" value="Submit">
+                <div class="control-agreement">
+                    <label class="control-label-2">
+                        <input type="checkbox" class="control-checkbox">
+                        <span class="control-fake"></span>
+                        <span>&nbsp;I agree to the processing of personal data</span>
+                    </label>
+                </div>
             </form>
-            <div class="control-agreement">
-                <label class="control-label-2">
-                    <input type="checkbox" class="control-checkbox">
-                    <span class="control-fake"></span>
-                    <span>&nbsp;I agree to the processing of personal data</span>
-                </label>
         </section>
 
-        <section>
+        <section class="repair-and-request">
             <div class="container repair">
                 <h3 class="title subtitle">TYPES OF REPAIR</h3>
                 <div class="logo">
@@ -115,7 +115,7 @@
                                 <li>Replacing sockets and switches</li>
                                 <li>Replacing doors</li>
                             </ul>
-                            <button class="button repair-button">from 900 rub / m2</button>
+                            <div class="button repair-button">from 900 rub / m2</div>
                         </div>
                     </div>
                     <div class="r-b-box r-b-box_bg2">
@@ -130,7 +130,7 @@
                                 <li>Replacing sockets and switches</li>
                                 <li>Replacing doors</li>
                             </ul>
-                            <button class="button repair-button">from 1800 rub / m2</button>
+                            <div class="button repair-button">from 1800 rub / m2</div>
                         </div>
                     </div>
                     <div class="r-b-box r-b-box_bg3">
@@ -145,13 +145,61 @@
                                 <li>Replacing sockets and switches</li>
                                 <li>Replacing doors</li>
                             </ul>
-                            <button class="button repair-button">from 4000 rub / m2</button>
+                            <div class="button repair-button">from 4000 rub / m2</div>
                         </div>
                     </div>
                 </div>
+                <div class="request">
+                    <div class="request-properties">
+                        <div class="r-p__item">
+                            <div class="r-p__item-number">01</div>
+                            <p>Our specialist will arrive for measurements per day<br>contact, or appoint a date convenient for you</p>
+                        </div>
+                        <div class="r-p__item">
+                            <div class="r-p__item-number">02</div>
+                            <p>Free metering</p>
+                        </div>
+                        <div class="r-p__item">
+                            <div class="r-p__item-number">03</div>
+                            <p>Free consultation</p>
+                        </div>
+                        <div class="r-p__item">
+                            <div class="r-p__item-number">04</div>
+                            <p>Get a cost estimate and<br>the timing of your future repairs</p>
+                        </div>
+                    </div>
+                    <form class="request-form">
+                        <p class="r-f__text">Leave a request for free<br>departure of the measurer</p>
+                        <label class="r-f__label">Name<br><input class="input r-f__input" type="text" value="What is your name:"></label>
+                        <label class="r-f__label">Phone<br><input class="input r-f__input" type="tel" value="Your phone number:"></label>
+                        <label class="r-f__label">Email<br><input class="input r-f__input" type="email" value="Your email:"></label>
+                        <label class="r-f__agreement control-label-2">
+                            <input type="checkbox" class="control-checkbox">
+                            <span class="control-fake"></span>
+                            <span>&nbsp;I agree to the processing of personal data</span>
+                        </label>
+                        <input type="submit" name="submit" class="button r-f__submit" value="Call the measurer">
+                    </form>
+                </div>
+                <div class="request-pig">
+                    <div class="request-pig__picture"><img src="./img/pig.svg"></div>
+                    <p class="request-pig__text">Help save 10 - 20% of the<br>cost of materials</p>
+                </div>
             </div>
         </section>
+        <!-- 
+        <section class="fantastic">
+        </section>
+        
+        <section class="clients">
+        </section>  
 
+        <section class="map">
+            <figure>
+                <img src="">
+            </figure>
+        </section>
+        -->
         
     </main>
 
