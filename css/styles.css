@@ -173,27 +173,32 @@ body * {
 
 .hero-title {
   font-size: 40px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .hero-text {
   font-size: 22px;
   line-height: 36px;
-  color: #ffffff;
+  color: #fff;
 }
 
-.hero-button__first {
+.button-top {
   width: 207px;
   height: 51px;
   margin-right: 20px;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 2px;
+  color: #fff;
+  box-shadow: none;
+  cursor: pointer;
+  outline: 0;
 }
 
-.hero-button__second {
-  width: 207px;
-  height: 51px;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #ffffff;
-  box-shadow: none;
+.button-top:hover {
+  background: #e3b873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border: transparent;
 }
 /*end of the hero, start of the projects*/
 
