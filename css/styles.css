@@ -742,6 +742,7 @@ body * {
   align-items: center;
   justify-content: space-around;
   margin: 46px 0 0 -20px;
+  cursor: default;
 }
 
 .client-order__title {
