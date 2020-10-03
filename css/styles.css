@@ -689,6 +689,7 @@ body * {
 
 .clients-logo {
   left: calc(50% - 16px);
+  width: 35px;
 }
 
 .clients-text {
