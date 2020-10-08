@@ -644,7 +644,7 @@ body * {
 }
 
 .fb__text {
-  width: 445px;
+  max-width: 445px;
 }
 
 .fb__list {
@@ -977,7 +977,6 @@ body * {
     display: flex;
     justify-content: center;
     align-items: center;
-    content: url("../img/right.svg");
     width: 36px;
     height: 36px;
     border: none;
@@ -990,7 +989,6 @@ body * {
   }
 
   .pbim__bitton-left {
-    rotate: 180deg;
     position: absolute;
     left: 13px;
   }
@@ -1040,6 +1038,7 @@ body * {
     font-size: 13px;
     color: rgba(255, 255, 255, 0.5);
     margin-top: 60px;
+    margin-right: 0;
   }
 
   .input {
