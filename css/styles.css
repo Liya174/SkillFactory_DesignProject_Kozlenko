@@ -973,7 +973,8 @@ body * {
     z-index: 1;
   }
 
-  .pbim__bitton {
+  .pbim__bitton,
+  .fbim__bitton {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -988,7 +989,8 @@ body * {
     z-index: 100;
   }
 
-  .pbim__bitton-left {
+  .pbim__bitton-left,
+  .fbim__bitton-left {
     position: absolute;
     left: 13px;
   }
@@ -1001,6 +1003,7 @@ body * {
   .control {
     margin-top: 0;
     background: #131313;
+    max-width: 100%;
   }
 
   .control-image {
@@ -1049,8 +1052,8 @@ body * {
 
   .control__submit {
     order: 3;
-    margin-top: 52px;
-    margin-bottom: -25px;
+    margin: 52px auto -25px;
+    width: 90%;
   }
 
   .control-agreement {
