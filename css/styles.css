@@ -102,7 +102,7 @@ body * {
   color: #363636;
   border: 0;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
-  width: 231px;
+  max-width: 231px;
 }
 
 /*start of the header */
@@ -380,7 +380,7 @@ body * {
 }
 
 .control__submit {
-  width: 200px;
+  max-width: 200px;
   height: 51px;
   font-family: "NunitoSans Regular", Helvetica, Arial, sans-serif;
   font-size: 13px;
@@ -915,6 +915,12 @@ body * {
     margin-top: 26px;
   }
 
+  .button-top {
+    max-width: 90vw;
+    margin-top: 26px;
+    margin-right: 0;
+  }
+
   .container {
     max-width: 90vw;
   }
@@ -987,6 +993,7 @@ body * {
     right: 13px;
     top: calc(50% - 18px);
     z-index: 100;
+    box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
   }
 
   .pbim__bitton-left,
@@ -1007,7 +1014,7 @@ body * {
   }
 
   .control-image {
-    width: 90%;
+    max-width: 90%;
     height: unset;
     background: cover no-repeat;
     margin-bottom: 40px;
@@ -1019,7 +1026,7 @@ body * {
   }
 
   .control-text {
-    width: 90vw;
+    max-width: 90vw;
     color: #fff;
     font-size: 11px;
   }
@@ -1029,7 +1036,7 @@ body * {
   }
 
   .control-form {
-    width: 90vw;
+    max-width: 90vw;
     flex-direction: column;
     align-items: stretch;
     margin-top: 0;
@@ -1073,7 +1080,7 @@ body * {
 
   .repair-boxes {
     flex-direction: column;
-    width: 90vw;
+    max-width: 90vw;
     margin-bottom: 0;
   }
 
@@ -1085,7 +1092,6 @@ body * {
   }
 
   .r-b-box_item {
-    min-width: 240px;
     width: 80%;
     margin-top: 223px;
     margin-left: 0;
@@ -1104,7 +1110,7 @@ body * {
   }
 
   .repair-button {
-    width: 190px;
+    max-width: 190px;
     padding: 10px 0;
     font-size: 15px;
     margin-top: 15px;
@@ -1116,11 +1122,10 @@ body * {
 
   .fantastic-box {
     flex-direction: column;
-    margin-bottom: 50px;
   }
 
   .fantastic__image_mobile {
-    display: unset;
+    display: flex;
     position: relative;
     margin: 27.5px auto 0;
     width: 90vw;
