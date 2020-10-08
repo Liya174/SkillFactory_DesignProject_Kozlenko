@@ -1178,7 +1178,7 @@ body * {
 
   .find-us__title {
     font-size: 18px;
-    width: 340px;
+    max-width: 340px;
   }
 
   .find-us_map {
@@ -1190,7 +1190,7 @@ body * {
   }
 
   .find-us_imgs img {
-    width: 39px;
+    max-width: 39px;
   }
 
   .find-us_img {
