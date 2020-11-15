@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repair Design Project</title>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="slider.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -39,18 +40,17 @@
             <div class="container"> 
                 <div class="project-flex-big"> 
                     <ul class="project-list">
-                        <li class="title p-l__list"><a class="nondesign-a" href="">Rostov-on-Don, Admiral</a></li>
-                        <li class="title p-l__list"><a class="nondesign-a" href="">Sochi Thieves</a></li>
-                        <li class="title p-l__list"><a class="nondesign-a" href="">Rostov-on-Don Patriotic</a></li>
+                        <!-- lists added with JS -->
                     </ul>
                     <div class="project-box">
                         <h2 class="title p-part__title">Completed<br>projects</h2>
-                        <p class="project-text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction 
-                                market we have made happy more than 1000 families</p>
+                        <p class="project-text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
                         <figure class="project-box__image_mobile">
-                            <img src="./img/middle tv.png" alt="tv picture" width="100%">
-                            <button class="pbim__bitton pbim__bitton-left"><img src="./img/left.svg"></button>
-                            <button class="pbim__bitton"><img src="./img/right.svg"></button>
+                            <div class="project-images_mobile">
+                                <!-- added with JS -->
+                            </div>
+                            <button class="pbim__button pbim__button-left"><img src="./img/left.svg"></button>
+                            <button class="pbim__button button-right"><img src="./img/right.svg"></button>
                         </figure>     
                         <div class="project-properties">
                             <h3 class="title p-p__title">City:</h3>
@@ -63,15 +63,15 @@
                             <p class="p-p__text">Upon request</p>
                         </div>
                         <div class="project-dots">
-                            <button class="button-nondesign"><img src="./img/arrow.svg"></button>
-                            <a class="nondesign-a" href=""><div class="p-d__dot x"></div> </a>
-                            <a class="nondesign-a" href=""><div class="p-d__dot"></div></a>
-                            <a class="nondesign-a" href=""><div class="p-d__dot"></div></a>
-                            <button class="button-nondesign"><img src="./img/arrow.svg" style="transform: scale(-1, 1);"></button>
+                            <button class="button-nondesign button-slider button-left"></button>
+                            <div class="project-dot-buttons">
+                                <!-- dots added with JS -->
+                            </div>   
+                            <button class="button-nondesign button-slider button-right"></button>
                         </div>
                     </div>
                     <figure class="project-box__image">
-                        <img src="./img/middle chairs.png" alt="chairs picture">
+                        <!-- images added with JS -->
                     </figure>
                 </div>
             </div>
@@ -186,29 +186,31 @@
                     </form>
                 </div>
                 <div class="request-pig">
-                    <div class="request-pig__picture"><img src="./img/pig.svg"></div>
+                    <div class="request-pig__picture">
+                        <img src="./img/pig.svg">
+                    </div>
                     <p class="request-pig__text">Help save 10 - 20% of the<br>cost of materials</p>
                 </div>
             </div>
         </section>
-         
+            
         <section class="fantastic" id="styles">
             <div class="fantastic-bg"></div>
             <div class="container fantastic-box">
                 <div class="fb__text">
                     <h2 class="title">We realize your<br>wildest fantasies</h2>
                     <ul class="fb__list">
-                        <li class="fb__list-item"><a class="nondesign-a" href="">American classic</a></li>
-                        <li class="fb__list-item"><a class="nondesign-a" href="">Empire</a></li>
-                        <li class="fb__list-item"><a class="nondesign-a" href="">Classical</a></li>
-                        <li class="fb__list-item"><a class="nondesign-a" href="">Loft</a></li>
-                        <li class="fb__list-item"><a class="nondesign-a" href="">Minimalism</a></li>
-                        <li class="fb__list-item"><a class="nondesign-a" href="">Provence</a></li>
-                        <li class="fb__list-item"><a class="nondesign-a" href="">Romanticism</a></li>
-                        <li class="fb__list-item"><a class="nondesign-a" href="">Scandinavian style</a></li>
-                        <li class="fb__list-item"><a class="nondesign-a" href="">Mediterranean style</a></li>
-                        <li class="fb__list-item"><a class="nondesign-a" href="">High tech</a></li>
-                        <li class="fb__list-item"><a class="nondesign-a" href="">Eclecticism</a></li>
+                        <li class="fb__list-item"><a class="nondesign-a" href="#">American classic</a></li>
+                        <li class="fb__list-item"><a class="nondesign-a" href="#">Empire</a></li>
+                        <li class="fb__list-item"><a class="nondesign-a" href="#">Classical</a></li>
+                        <li class="fb__list-item"><a class="nondesign-a" href="#">Loft</a></li>
+                        <li class="fb__list-item"><a class="nondesign-a" href="#">Minimalism</a></li>
+                        <li class="fb__list-item"><a class="nondesign-a" href="#">Provence</a></li>
+                        <li class="fb__list-item"><a class="nondesign-a" href="#">Romanticism</a></li>
+                        <li class="fb__list-item"><a class="nondesign-a" href="#">Scandinavian style</a></li>
+                        <li class="fb__list-item"><a class="nondesign-a" href="#">Mediterranean style</a></li>
+                        <li class="fb__list-item"><a class="nondesign-a" href="#">High tech</a></li>
+                        <li class="fb__list-item"><a class="nondesign-a" href="#">Eclecticism</a></li>
                     </ul>
                 </div>
                 <div class="fb__picbox">
@@ -222,8 +224,10 @@
                 <div class="fantastic__image_mobile">
                     <figure class="fantastic__image_mobile-pic">
                     </figure>
-                    <button class="fbim__bitton fbim__bitton-left"><img src="./img/left.svg"></button>
-                    <button class="fbim__bitton"><img src="./img/right.svg"></button>
+                    <button class="fbim__button fbim__button-left">
+                        <img src="./img/left.svg">
+                    </button>
+                    <button class="fbim__button"><img src="./img/right.svg"></button>
                 </div>
             </div>  
         </section>
@@ -302,8 +306,8 @@
             <div class="find-us">
                 <h2 class="title find-us__title">Rostov-on-Don,&nbspNansen St.,&nbsp239 Shopping&nbspCenter Decorum<br>Tel&nbsp+7&nbsp(928)&nbsp768&nbsp32&nbsp29</h2>
                 <div class="find-us_imgs">
-                    <div class="find-us_img"><a href=""><img src="./img/mail.svg"></a></div>
-                    <div><a href=""><img src="./img/insta.svg"></a></div>
+                    <div class="find-us_img"><a href="#"><img src="./img/mail.svg"></a></div>
+                    <div><a href="#"><img src="./img/insta.svg"></a></div>
                 </div>
                 <figure class="find-us_map">                    
                 </figure>
