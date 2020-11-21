@@ -114,7 +114,7 @@ function init() {
         }
         
         let currentImageIndex;
-        let newImageIndex = NaN;
+        let newImageIndex;
         images.forEach(image => {
             if (image.classList.contains('active')) {
                 currentImageIndex = +image.dataset.index;
